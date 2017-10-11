@@ -1,7 +1,7 @@
 function Install-Npm {
-    npm install
-    # Now the hard Part, what is the default browser?
+    # Determine the default browser
     $browser = (Get-ItemProperty "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.html\OpenWithList").a
-    # start the engines!
+    # open the browser to reddit. This takes less time than npm install
     Start-Process $browser -ArgumentList "https://www.reddit.com/"
+    npm install
 }
