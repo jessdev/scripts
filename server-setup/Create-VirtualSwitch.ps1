@@ -15,8 +15,8 @@
 .NOTES
     Must have Hyper-V compatible machine to work
 
-.LINK
-http://kevinpelgrims.wordpress.com
+.LINK 
+    https://github.com/jessdev/scripts
 
 #>
 
